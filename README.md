@@ -2,6 +2,10 @@
 
 **Author:** [Ravdeep Singh](https://github.com/Ravdeep3542) · **License:** GPL-2.0-or-later · Copyright © 2026 Ravdeep Singh
 
+![Version](https://img.shields.io/badge/version-1.9.0-blue) ![PHP](https://img.shields.io/badge/php-%3E%3D8.0-777bb3) ![WordPress](https://img.shields.io/badge/wordpress-%3E%3D6.0-21759b) ![License](https://img.shields.io/badge/license-GPLv2-green)
+
+**You can't turn back if you get used to it**😅
+
 ## Description
 
 A keyboard-first, VS Code / Raycast-style command palette for the WordPress admin. Press a shortcut anywhere in wp-admin, type a few characters, and navigate to any screen, run admin actions, or search all your content — without touching the mouse or reloading the page.
@@ -87,5 +91,3 @@ Deactivating keeps all data. Deleting the plugin removes the search index table,
 - All REST endpoints require authentication and a nonce; file downloads and developer tools are administrator-only.
 - Download endpoints confine resolved paths to `wp-content` / plugins / themes trees (no arbitrary filesystem reads).
 - The audit log stores user IDs, command IDs, targets and outcomes of destructive attempts — site-internal accountability data, kept in your own database.
-
-![Version](https://img.shields.io/badge/version-1.9.0-blue) ![PHP](https://img.shields.io/badge/php-%3E%3D8.0-777bb3) ![WordPress](https://img.shields.io/badge/wordpress-%3E%3D6.0-21759b) ![License](https://img.shields.io/badge/license-GPLv2-green)
