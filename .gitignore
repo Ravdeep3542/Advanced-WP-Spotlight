@@ -1,48 +1,73 @@
-# WordPress - ignore core, configuration, examples, uploads and logs.
-# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+# OS junk
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
-/wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
+# Editors / IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
 
-# Configuration
-wp-config.php
+# Cursor / local agent tooling (not part of the plugin)
+.cursor/
+.agent/
+agent-transcripts/
+*.canvas.tsx
 
-# Example themes
-/wp-content/themes/twenty*/
+# Local AI / agent context docs — keep on disk, never publish
+.ai/
 
-# Example plugin
-/wp-content/plugins/hello.php
+# Local env / secrets
+.env
+.env.*
+!.env.example
 
-# Uploads
-/wp-content/uploads/
-
-# Log files
+# Logs and temp
 *.log
+*.tmp
+*.temp
+*.bak
+*.orig
 
-# htaccess
-/.htaccess
+# Archives accidentally left in the tree
+*.zip
+*.tar
+*.tar.gz
+*.rar
 
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
+# Dependency / build leftovers (plugin ships vanilla JS/CSS — no build step)
+/node_modules/
+/vendor/
+/composer.lock
+/package-lock.json
+/yarn.lock
+/pnpm-lock.yaml
+/dist/
+/build/
+.phpunit.result.cache
+.phpcs-cache
+.phpunit.cache/
 
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
+# Local WordPress / WAMP noise that must never ship
+wp-config.php
+wp-config.awps-backup.php
+wp-config.*.php
+!wp-config.sample.php
+
+# Reference / scratch copies that are not this plugin
+/reference/
+/_reference/
+/old/
+/backup/
+/tmp/
+/temp/
+*.local.md
+NOTES.local.md
+TODO.local.md
