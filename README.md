@@ -1,5 +1,7 @@
 # Advanced WP Spotlight — Universal Command Palette
 
+**Author:** [Ravdeep Singh](https://github.com/Ravdeep3542) · **License:** GPL-2.0-or-later · Copyright © 2026 Ravdeep Singh
+
 ## Description
 
 A keyboard-first, VS Code / Raycast-style command palette for the WordPress admin. Press a shortcut anywhere in wp-admin, type a few characters, and navigate to any screen, run admin actions, or search all your content — without touching the mouse or reloading the page.
